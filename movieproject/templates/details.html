@@ -7,8 +7,8 @@
         </div>
 
         <div class="col-md-6">
-            <h2>{{movie.name}} &emsp; {{movie.year}} </h2><br>
-            {{movie.description}}<br>
+            <h2 style="color:tomato">{{movie.name}} | {{movie.year}} </h2><hr>
+            {{movie.description}}<br><br>
             <a class="btn btn-warning" href="{% url 'movieapp:update' movie.id %}">EDIT</a>
             <a class="btn btn-danger" href ="{% url 'movieapp:delete' movie.id %}">DELETE</a>
         </div>
